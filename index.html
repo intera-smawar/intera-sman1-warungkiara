@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Apa Itu INTERA? | Ekstrakurikuler INTERA SMAN 1 Warungkiara</title>
+  <meta name="description" content="INTERA adalah ekstrakurikuler di SMAN 1 Warungkiara yang berfokus pada teknologi informasi dan komunikasi, desain grafis, website, jurnalistik, administrasi, dan kreativitas digital siswa.">
+  <meta name="keywords" content="INTERA, Eskul INTERA, Ekstrakurikuler INTERA, SMAN 1 Warungkiara, teknologi informasi, desain grafis, website, jurnalistik, administrasi">
+  <meta name="author" content="INTERA SMAN 1 Warungkiara">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f172a">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+    nav {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(15,23,42,.96);
+      backdrop-filter: blur(10px);
+      padding: 15px 7%;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { color: white; font-size: 25px; font-weight: bold; letter-spacing: 2px; }
+    .logo span { color: #38bdf8; }
+    nav ul { list-style: none; display: flex; gap: 25px; }
+    nav a { color: white; text-decoration: none; font-weight: 500; transition: .3s; }
+    nav a:hover { color: #38bdf8; }
+
+    .hero {
+      min-height: 90vh;
+      display: flex; justify-content: center; align-items: center;
+      text-align: center; padding: 60px 20px; color: white;
+      background:
+        radial-gradient(circle at top right, #0ea5e9 0%, transparent 30%),
+        radial-gradient(circle at bottom left, #6366f1 0%, transparent 30%),
+        #0f172a;
+    }
+    .hero-content { max-width: 850px; }
+    .badge {
+      display: inline-block; padding: 8px 18px; border: 1px solid rgba(255,255,255,.3);
+      border-radius: 50px; margin-bottom: 20px; color: #bae6fd;
+      background: rgba(255,255,255,.08);
+    }
+    .hero h1 { font-size: clamp(45px,9vw,90px); letter-spacing: 8px; margin-bottom: 10px; }
+    .hero h1 span { color: #38bdf8; }
+    .hero h2 { font-size: clamp(20px,4vw,32px); margin-bottom: 20px; }
+    .hero p { font-size: 18px; color: #cbd5e1; max-width: 700px; margin: auto; }
+    .button {
+      display: inline-block; margin-top: 30px; padding: 13px 25px; border-radius: 10px;
+      background: #38bdf8; color: #082f49; text-decoration: none; font-weight: bold;
+      transition: .3s;
+    }
+    .button:hover { transform: translateY(-3px); background: #7dd3fc; }
+
+    section { padding: 80px 7%; }
+    .container { max-width: 1100px; margin: auto; }
+    .section-title { text-align: center; margin-bottom: 45px; }
+    .section-title h2 { font-size: 35px; color: #0f172a; margin-bottom: 10px; }
+    .section-title p { color: #64748b; }
+
+    .about { background: white; }
+    .about-box {
+      max-width: 900px; margin: auto; background: #f8fafc; padding: 35px;
+      border-radius: 20px; border: 1px solid #e2e8f0;
+    }
+    .about-box p { margin-bottom: 18px; }
+    .highlight { color: #0284c7; font-weight: bold; }
+
+    .fields { display: grid; grid-template-columns: repeat(4,1fr); gap: 20px; }
+    .card {
+      background: white; padding: 30px 20px; text-align: center; border-radius: 18px;
+      border: 1px solid #e2e8f0; transition: .3s;
+    }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(15,23,42,.1); }
+    .icon { font-size: 45px; margin-bottom: 15px; }
+    .card h3 { margin-bottom: 10px; color: #0f172a; }
+    .card p { color: #64748b; font-size: 14px; }
+
+    .purpose { background: #0f172a; color: white; }
+    .purpose .section-title h2 { color: white; }
+    .purpose .section-title p { color: #94a3b8; }
+    .purpose-box {
+      max-width: 900px; margin: auto; text-align: center;
+      font-size: 18px; color: #cbd5e1;
+    }
+
+    .vision { background: #e0f2fe; }
+    .vision-box {
+      max-width: 850px; margin: auto; padding: 40px; text-align: center;
+      background: white; border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(15,23,42,.08);
+    }
+    .vision-box h3 { color: #0284c7; font-size: 25px; margin-bottom: 15px; }
+
+    .slogan {
+      text-align: center; padding: 90px 20px;
+      background: linear-gradient(135deg,#0284c7,#4f46e5); color: white;
+    }
+    .slogan h2 { font-size: clamp(25px,5vw,42px); margin-bottom: 10px; }
+    .slogan p { color: #e0f2fe; }
+
+    footer { background: #020617; color: #94a3b8; text-align: center; padding: 35px 20px; }
+    footer strong { color: white; }
+
+    @media (max-width: 800px) {
+      nav { padding: 15px 5%; }
+      nav ul { gap: 12px; font-size: 13px; }
+      .fields { grid-template-columns: repeat(2,1fr); }
+      section { padding: 60px 5%; }
+    }
+    @media (max-width: 500px) {
+      nav { flex-direction: column; gap: 10px; }
+      nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+      .hero { min-height: 80vh; }
+      .hero h1 { letter-spacing: 4px; }
+      .fields { grid-template-columns: 1fr; }
+      .about-box, .vision-box { padding: 25px; }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">INTER<span>A</span></div>
+    <ul>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#bidang">Bidang</a></li>
+      <li><a href="#tujuan">Tujuan</a></li>
+      <li><a href="#visi">Visi</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <div class="badge">Ekstrakurikuler SMAN 1 Warungkiara</div>
+      <h1>INTER<span>A</span></h1>
+      <h2>Teknologi • Kreativitas • Inovasi</h2>
+      <p>Wadah bagi siswa untuk mengembangkan keterampilan teknologi informasi dan komunikasi serta kreativitas di era digital.</p>
+      <a href="#tentang" class="button">Kenali INTERA →</a>
+    </div>
+  </header>
+
+  <section id="tentang" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>Apa Itu INTERA?</h2>
+        <p>Mengenal lebih dekat ekstrakurikuler INTERA</p>
+      </div>
+      <div class="about-box">
+        <p><span class="highlight">INTERA</span> adalah ekstrakurikuler di <strong>SMAN 1 Warungkiara</strong> yang berfokus pada pengembangan keterampilan siswa di bidang teknologi informasi dan komunikasi.</p>
+        <p>INTERA menjadi wadah bagi siswa untuk mengembangkan minat, kreativitas, dan keterampilan dalam dunia digital. Kegiatan INTERA mencakup berbagai bidang seperti komputer, desain grafis, pemrograman, pengelolaan website, jurnalistik, pembuatan konten digital, serta public speaking.</p>
+        <p>Melalui berbagai kegiatan dan pelatihan, INTERA mendorong anggotanya untuk menjadi generasi yang unggul, kreatif, inovatif, dan mampu mengikuti perkembangan teknologi di era digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="bidang">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bidang Kegiatan INTERA</h2>
+        <p>Berbagai bidang yang dikembangkan oleh anggota INTERA</p>
+      </div>
+      <div class="fields">
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Administrasi</h3>
+          <p>Mengembangkan kemampuan pengelolaan data, dokumen, dan administrasi digital.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>Desain Grafis</h3>
+          <p>Mengembangkan kreativitas melalui desain, poster, ilustrasi, dan konten visual digital.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Website</h3>
+          <p>Mempelajari pembuatan, pengelolaan, dan pengembangan website.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📰</div>
+          <h3>Jurnalistik</h3>
+          <p>Mengembangkan kemampuan menulis, dokumentasi, publikasi, dan pembuatan konten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tujuan" class="purpose">
+    <div class="container">
+      <div class="section-title">
+        <h2>Tujuan INTERA</h2>
+        <p>Pengembangan potensi siswa di era digital</p>
+      </div>
+      <div class="purpose-box">
+        <p>INTERA bertujuan untuk menggali dan mengembangkan potensi siswa dalam bidang teknologi informasi dan komunikasi serta memberikan pengalaman praktis yang dapat bermanfaat bagi kegiatan sekolah maupun kehidupan di era digital.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visi" class="vision">
+    <div class="container">
+      <div class="section-title">
+        <h2>Visi INTERA</h2>
+        <p>Arah dan tujuan pengembangan INTERA</p>
+      </div>
+      <div class="vision-box">
+        <h3>Generasi Unggul di Era Digital</h3>
+        <p>Mencetak generasi unggul yang berkarakter, inovatif, dan berdaya saing di era digital melalui penguasaan teknologi informasi dan komunikasi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="slogan">
+    <h2>INTERA</h2>
+    <p>“Berinovasi, Berteknologi Untuk Masa Depan.”</p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> <strong>INTERA SMAN 1 Warungkiara</strong></p>
+    <p>Ekstrakurikuler Teknologi Informasi dan Komunikasi</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
